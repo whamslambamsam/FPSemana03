@@ -5,8 +5,8 @@ stackInput = input()
 stackInput = stackInput.split(" ")
 
 for x in stackInput:
-    stack.appendleft(x)
-print(stack)
+    stack.append(x)
+print(list(stack))
 
-for y in stack:
-    print(int(y)**2)
+for y in list(stack):
+    print(int(stack.pop())**2)
